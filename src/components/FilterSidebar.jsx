@@ -1,31 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const FilterSidebar = () => {
-  const [vaccineFilters, setVaccineFilters] = useState({
-    gripe: false,
-    hpv: false,
-    febreAmarela: false
-  });
-
-  const [labFilters, setLabFilters] = useState({
-    hemograma: false,
-    colesterol: false,
-    glicose: false
-  });
-
-  const handleVaccineChange = (filter) => {
-    setVaccineFilters(prev => ({ ...prev, [filter]: !prev[filter] }));
-  };
-
-  const handleLabChange = (filter) => {
-    setLabFilters(prev => ({ ...prev, [filter]: !prev[filter] }));
-  };
-
   return (
     <aside className="bg-gray-100 w-64 p-2 rounded-lg shadow shrink-0">
       <h3 className="font-bold text-sabin-red text-lg mb-4 px-4">Filtrar e organizar</h3>
 
-      {/* Filtro de Vacinas */}
+      
       <div className="mb-6 bg-white rounded-md border p-4">
         <div className="flex items-center mb-2">
           <img
@@ -40,35 +20,20 @@ const FilterSidebar = () => {
           <div className="bg-gray-300 flex-1 h-[2px]"></div>
         </div>
         <label className="block mb-2 text-sm">
-          <input
-            type="checkbox"
-            className="mr-2"
-            checked={vaccineFilters.gripe}
-            onChange={() => handleVaccineChange('gripe')}
-          />
+          <input type="checkbox" className="mr-2" />
           Gripe
         </label>
         <label className="block mb-2 text-sm">
-          <input
-            type="checkbox"
-            className="mr-2"
-            checked={vaccineFilters.hpv}
-            onChange={() => handleVaccineChange('hpv')}
-          />
+          <input type="checkbox" className="mr-2" />
           HPV
         </label>
         <label className="block text-sm">
-          <input
-            type="checkbox"
-            className="mr-2"
-            checked={vaccineFilters.febreAmarela}
-            onChange={() => handleVaccineChange('febreAmarela')}
-          />
+          <input type="checkbox" className="mr-2" />
           Febre Amarela
         </label>
       </div>
 
-      {/* Filtro de Exames Laboratoriais */}
+    
       <div className="bg-white rounded-md p-4 border">
         <div className="flex items-center mb-2">
           <img
@@ -83,30 +48,15 @@ const FilterSidebar = () => {
           <div className="bg-gray-300 flex-1 h-[2px]"></div>
         </div>
         <label className="block mb-2 text-sm">
-          <input
-            type="checkbox"
-            className="mr-2"
-            checked={labFilters.hemograma}
-            onChange={() => handleLabChange('hemograma')}
-          />
+          <input type="checkbox" className="mr-2" />
           Hemograma
         </label>
         <label className="block mb-2 text-sm">
-          <input
-            type="checkbox"
-            className="mr-2"
-            checked={labFilters.colesterol}
-            onChange={() => handleLabChange('colesterol')}
-          />
+          <input type="checkbox" className="mr-2" />
           Colesterol
         </label>
         <label className="block text-sm">
-          <input
-            type="checkbox"
-            className="mr-2"
-            checked={labFilters.glicose}
-            onChange={() => handleLabChange('glicose')}
-          />
+          <input type="checkbox" className="mr-2" />
           Glicose
         </label>
       </div>

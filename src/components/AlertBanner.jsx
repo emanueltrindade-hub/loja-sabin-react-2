@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const AlertBanner = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [estaVisivel, setEstaVisivel] = useState(true);
 
-  if (!isVisible) return null;
+  if (!estaVisivel) return null;
 
   return (
     <section className="bg-[#ede5f2] border border-sabin-purple rounded-lg p-6 flex justify-between items-center mt-8">
@@ -20,7 +20,7 @@ const AlertBanner = () => {
         </p>
       </div>
       <button
-        onClick={() => setIsVisible(false)}
+        onClick={() => setEstaVisivel(false)}
         className="flex items-center gap-2 hover:opacity-80"
       >
         <span className="font-bold text-sm">Fechar</span>
