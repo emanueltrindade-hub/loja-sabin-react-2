@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  loja-sabin-react: 
+    container_name: loja-sabin-react
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development 
+    ports:
+      - "5173:5173"  
+    volumes:
+      - .:/app
+      - /app/node_modules 
+    environment:
+      - NODE_ENV=development  
+      - CHOKIDAR_USEPOLLING=true  
+    restart: unless-stopped
+    labels:
+      - "traefik.enable=true"  
+      - "com.docker.compose.project=loja-sabin"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
