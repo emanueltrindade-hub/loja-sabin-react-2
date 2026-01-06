@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 
-const Navbar = ({ navigateToLogin }) => {
-  const [currentScreen, setCurrentScreen] = useState('home'); 
-
-  if (currentScreen === 'login') {
-    return null; 
-  }
+const Navbar = () => {
+  
 
   return (
     <nav className="sticky top-0 z-10 bg-[#F7F8FC] border-t border-b h-20">
@@ -38,7 +34,7 @@ const Navbar = ({ navigateToLogin }) => {
        
         <div className="flex items-center gap-4">
          
-          <div className="text-right cursor-pointer" onClick={navigateToLogin}>
+          <div className="text-right">
             <div className="text-sm font-semibold uppercase">ENTRE / CADASTRE-SE</div>
             <div className="text-xs text-gray-600 uppercase">MINHA CONTA</div>
           </div>
@@ -47,7 +43,6 @@ const Navbar = ({ navigateToLogin }) => {
             alt="Usuário"
             className="w-6"
           />
-
          
           <button className="p-1">
             <img

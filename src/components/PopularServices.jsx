@@ -8,7 +8,7 @@ const PopularServices = () => {
           <h2 className="text-xl font-bold mb-6">Serviços mais buscados:</h2>
 
           <div className="grid grid-cols-4 gap-4">
-            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto"> {/* Largura aumentada */}
+            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto">
               <div className="absolute w-[36px] h-[36px] bg-gray-100 rounded-tl-lg rounded-br-lg flex items-center justify-center" style={{ top: 0, left: 0 }}>
                 <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/6d865f811cb7478325d4b615b32a20ea.svg" alt="laboratorio vermelho" className="w-5 h-5" />
               </div>
@@ -26,7 +26,7 @@ const PopularServices = () => {
               </div>
             </div>
 
-            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto"> {/* Largura aumentada */}
+            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto"> 
               <div className="absolute w-[36px] h-[36px] bg-gray-100 rounded-tl-lg rounded-br-lg flex items-center justify-center" style={{ top: 0, left: 0 }}>
                 <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/775b0ad4036e05f25346268a2f26b13e.svg" alt="laboratorio vermelho" className="w-5 h-5" />
               </div>
@@ -45,7 +45,7 @@ const PopularServices = () => {
               </div>
             </div>
 
-            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto"> {/* Largura aumentada */}
+            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto">
               <div className="absolute w-[36px] h-[36px] bg-gray-100 rounded-tl-lg rounded-br-lg flex items-center justify-center" style={{ top: 0, left: 0 }}>
                 <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/6d865f811cb7478325d4b615b32a20ea.svg" alt="laboratorio vermelho" className="w-5 h-5" />
               </div>
@@ -63,7 +63,7 @@ const PopularServices = () => {
               </div>
             </div>
 
-            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto"> {/* Largura aumentada */}
+            <div className="relative bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-1 transition flex flex-col w-[240px] mx-auto">
               <div className="absolute w-[36px] h-[36px] bg-gray-100 rounded-tl-lg rounded-br-lg flex items-center justify-center" style={{ top: 0, left: 0 }}>
                 <img src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/775b0ad4036e05f25346268a2f26b13e.svg" alt="laboratorio vermelho" className="w-5 h-5" />
               </div>
