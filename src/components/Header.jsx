@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 const Header = () => {
-  const [selectedState, setSelectedState] = useState('Brasília - DF');
+  const [estadoSelecionado, setEstadoSelecionado] = useState('Brasília - DF');
 
-  const states = [
+  const estado = [
     'Brasília - DF', 'Goiás - GO', 'Mato Grosso', 'Mato Grosso do Sul',
     'Alagoas', 'Bahia', 'Ceará', 'Maranhão', 'Paraíba', 'Pernambuco',
     'Piauí', 'Rio Grande do Norte', 'Sergipe', 'Acre', 'Amapá',
@@ -31,12 +31,12 @@ const Header = () => {
         <div className="flex items-center text-white bg-[#5C5F69] rounded-full px-4 py-1">
           <span className="text-sm mr-2">Você está em</span>
           <select
-            value={selectedState}
-            onChange={(e) => setSelectedState(e.target.value)}
+            value={estadoSelecionado}
+            onChange={(e) => setEstadoSelecionado(e.target.value)}
             className="bg-transparent text-sm cursor-pointer outline-none"
           >
-            {states.map((state) => (
-              <option key={state} value={state}>{state}</option>
+            {estado.map((estado) => (
+              <option key={estado} value={estado}>{estado}</option>
             ))}
           </select>
         </div>
