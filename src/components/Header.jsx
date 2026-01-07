@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="w-full max-w-[1108px] mx-auto bg-white px-4 py-2 md:mt-[100px]">
       <div className="flex items-center justify-between">
-        {/* Links Desktop */}
+        
         <div className="flex gap-x-6 md:hidden">
           <a href="https://sabin.com.br/unidade/brasilia-df/" className="text-xs hover:text-sabin-red">
             PORTAL SABIN
@@ -27,7 +27,7 @@ const Header = () => {
           </a>
         </div>
 
-        {/* Seletor de Estado */}
+     
         <div className="flex items-center text-white bg-[#5C5F69] rounded-full px-4 py-1">
           <span className="text-sm mr-2">Você está em</span>
           <select
@@ -41,7 +41,6 @@ const Header = () => {
           </select>
         </div>
 
-        {/* Ícones de Acessibilidade */}
         <div className="flex items-center gap-4">
           <img
             src="https://loja.sabin.com.br/skin/frontend/sabin/default/release/10b294aa1d728b6901fa9c1834bcb9fc.svg"

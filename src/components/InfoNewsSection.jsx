@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const InfoNewsSection = () => {
   return (
